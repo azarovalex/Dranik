@@ -12,6 +12,7 @@
 		EC7239252297D3D500FD8FDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7239232297D3D500FD8FDE /* Main.storyboard */; };
 		EC7239272297D3D700FD8FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7239262297D3D700FD8FDE /* Assets.xcassets */; };
 		EC72392A2297D3D700FD8FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7239282297D3D700FD8FDE /* LaunchScreen.storyboard */; };
+		EC7239332297D43C00FD8FDE /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7239322297D43C00FD8FDE /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EC7239262297D3D700FD8FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC7239292297D3D700FD8FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC72392B2297D3D700FD8FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7239322297D43C00FD8FDE /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		EC72391E2297D3D500FD8FDE /* Dranik */ = {
 			isa = PBXGroup;
 			children = (
+				EC7239312297D42800FD8FDE /* Reactive Library */,
 				EC72391F2297D3D500FD8FDE /* AppDelegate.swift */,
 				EC7239212297D3D500FD8FDE /* ViewController.swift */,
 				EC7239232297D3D500FD8FDE /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				EC72392B2297D3D700FD8FDE /* Info.plist */,
 			);
 			path = Dranik;
+			sourceTree = "<group>";
+		};
+		EC7239312297D42800FD8FDE /* Reactive Library */ = {
+			isa = PBXGroup;
+			children = (
+				EC7239322297D43C00FD8FDE /* Observable.swift */,
+			);
+			path = "Reactive Library";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC7239222297D3D500FD8FDE /* ViewController.swift in Sources */,
+				EC7239332297D43C00FD8FDE /* Observable.swift in Sources */,
 				EC7239202297D3D500FD8FDE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

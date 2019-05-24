@@ -10,11 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet private var label: UILabel!
+    @IBOutlet private var textField: UITextField!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let (sink, observable) = Observable<String>.pipe()
+        observable.subscribe { event in
+            print(event)
+        }
+        sink.emitValue("Hello")
     }
-
-
 }
 
