@@ -14,7 +14,7 @@ extension UITextField {
         let (sink, observable) = Observable<String>.pipe()
         let target = ObservationTarget(object: self, keyPath: #keyPath(text)) { sink.emitValue($0) }
         addTarget(target, action: #selector(ObservationTarget<String>.handleChange), for: .editingChanged)
-        observable.strongReferences.append(target)
+        observable.targetStrongReference = target
         return observable
     }
 }
