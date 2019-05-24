@@ -18,13 +18,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        textField.textObservable()
-            .map { $0 + "LOL" }
-            .filter { $0.count == 5 }
-            .subscribe { [weak self] event in
-                guard case let .value(newValue) = event else { return }
-                self?.label.text = newValue }
-            .disposed(by: bag)
+        let textObservable = textField.textObservable()
+            .map { $0 + " LOL" }
+
+
+        DispatchQueue.concurrentPerform(iterations: 10_0000) { _ in
+            textObservable
+                .subscribe { print($0) }
+                .disposed(by: bag)
+        }
     }
 
     @IBAction func deinitViewController(_ sender: Any) {
