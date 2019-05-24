@@ -41,6 +41,20 @@ final class Observable<T> {
         return observable
     }
 
+    func filter(_ predicate: @escaping (T) -> Bool) -> Observable<T> {
+        let (sink, observable) = Observable<T>.pipe()
+        subscribe { event in
+            switch event {
+            case .value(let value):
+                if predicate(value) { sink.emitValue(value) }
+            case .error(let error):
+                sink.emitError(error)
+            }
+        }
+        observable.strongReferences.append(self)
+        return observable
+    }
+
     deinit {
         print("--- OBSERVABLE DEINITED ---")
     }

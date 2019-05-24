@@ -20,6 +20,7 @@ class ViewController: UIViewController {
 
         self.observable = textField.textObservable()
             .map { $0 + "LOL" }
+            .filter { $0.count == 5 }
 
         observable?.subscribe { [weak self] event in
             guard case let .value(newValue) = event else { return }
