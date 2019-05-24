@@ -23,13 +23,10 @@ final class Observable<T> {
         return (sink, observable)
     }
 
-    static func merge(observables: Observable<T>...) -> Observable<T> {
-        let (sink, mergedObservables) = Observable<T>.pipe()
-        for observable in observables {
-            observable.subscribe { event in sink.emit(event: event) }
-                .disposed(by: mergedObservables.bag)
-        }
-        return mergedObservables
+    static func create(_ closure: (Sink<T>) -> Void) -> Observable<T> {
+        let (sink, observable) = Observable.pipe()
+        closure(sink)
+        return observable
     }
 
     private func send(_ value: Event<T>) {
@@ -44,6 +41,24 @@ final class Observable<T> {
         return Disposable {
             self.subscriptions[uuid] = nil
         }
+    }
+
+    deinit {
+        print("--- OBSERVABLE DEINITED ---")
+    }
+}
+
+
+// MARK: - Methods
+extension Observable {
+
+    static func merge(observables: Observable<T>...) -> Observable<T> {
+        let (sink, mergedObservables) = Observable<T>.pipe()
+        for observable in observables {
+            observable.subscribe { event in sink.emit(event: event) }
+                .disposed(by: mergedObservables.bag)
+        }
+        return mergedObservables
     }
 
     func map<U>(_ transform: @escaping (T) -> U) -> Observable<U> {
@@ -81,10 +96,4 @@ final class Observable<T> {
         }.disposed(by: observable.bag)
         return observable
     }
-
-
-    deinit {
-        print("--- OBSERVABLE DEINITED ---")
-    }
 }
-
