@@ -13,15 +13,24 @@ class ViewController: UIViewController {
     @IBOutlet private var label: UILabel!
     @IBOutlet private var textField: UITextField!
 
+    var observable: Observable<String>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let (sink, observable) = Observable<String>.pipe()
-        observable.subscribe { event in
-            print(event)
+        self.observable = textField.textObservable()
+        observable?.subscribe { [weak self] event in
+            guard case let .value(newValue) = event else { return }
+            self?.label.text = newValue
         }
-        sink.emitValue("Hello")
+    }
+
+    @IBAction func deinitViewController(_ sender: Any) {
+        UIApplication.shared.keyWindow?.rootViewController = UIViewController()
+    }
+
+    deinit {
+        print("--- VIEW CONTROLLER DEINITED ---")
     }
 }
 

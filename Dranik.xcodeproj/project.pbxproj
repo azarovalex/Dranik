@@ -13,6 +13,10 @@
 		EC7239272297D3D700FD8FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7239262297D3D700FD8FDE /* Assets.xcassets */; };
 		EC72392A2297D3D700FD8FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7239282297D3D700FD8FDE /* LaunchScreen.storyboard */; };
 		EC7239332297D43C00FD8FDE /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7239322297D43C00FD8FDE /* Observable.swift */; };
+		EC7239362297DB8400FD8FDE /* UITextField+Dranik.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7239352297DB8400FD8FDE /* UITextField+Dranik.swift */; };
+		EC7239382297DC8E00FD8FDE /* ObservationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7239372297DC8E00FD8FDE /* ObservationTarget.swift */; };
+		EC72393A2297F28000FD8FDE /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7239392297F28000FD8FDE /* Sink.swift */; };
+		EC72393C2297F78F00FD8FDE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72393B2297F78F00FD8FDE /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		EC7239292297D3D700FD8FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC72392B2297D3D700FD8FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC7239322297D43C00FD8FDE /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		EC7239352297DB8400FD8FDE /* UITextField+Dranik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Dranik.swift"; sourceTree = "<group>"; };
+		EC7239372297DC8E00FD8FDE /* ObservationTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationTarget.swift; sourceTree = "<group>"; };
+		EC7239392297F28000FD8FDE /* Sink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
+		EC72393B2297F78F00FD8FDE /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +78,21 @@
 		EC7239312297D42800FD8FDE /* Reactive Library */ = {
 			isa = PBXGroup;
 			children = (
+				EC7239342297DB5900FD8FDE /* UIKitExtentions */,
 				EC7239322297D43C00FD8FDE /* Observable.swift */,
+				EC7239392297F28000FD8FDE /* Sink.swift */,
+				EC72393B2297F78F00FD8FDE /* Event.swift */,
 			);
 			path = "Reactive Library";
+			sourceTree = "<group>";
+		};
+		EC7239342297DB5900FD8FDE /* UIKitExtentions */ = {
+			isa = PBXGroup;
+			children = (
+				EC7239352297DB8400FD8FDE /* UITextField+Dranik.swift */,
+				EC7239372297DC8E00FD8FDE /* ObservationTarget.swift */,
+			);
+			path = UIKitExtentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7239382297DC8E00FD8FDE /* ObservationTarget.swift in Sources */,
 				EC7239222297D3D500FD8FDE /* ViewController.swift in Sources */,
+				EC72393A2297F28000FD8FDE /* Sink.swift in Sources */,
 				EC7239332297D43C00FD8FDE /* Observable.swift in Sources */,
+				EC7239362297DB8400FD8FDE /* UITextField+Dranik.swift in Sources */,
+				EC72393C2297F78F00FD8FDE /* Event.swift in Sources */,
 				EC7239202297D3D500FD8FDE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
