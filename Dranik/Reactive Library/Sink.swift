@@ -23,11 +23,11 @@ final class Sink<T> {
     }
 
     func emitValue(_ value: T) {
-        eventHandler(.value(value: value))
+        eventHandler(.value(value))
     }
 
     func emitError(_ error: Error) {
-        eventHandler(Event<T>.error(error: error))
+        eventHandler(.error(error))
     }
 
     deinit {

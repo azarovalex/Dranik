@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         self.observable = textField.textObservable()
+            .map { $0 + "LOL" }
+
         observable?.subscribe { [weak self] event in
             guard case let .value(newValue) = event else { return }
             self?.label.text = newValue

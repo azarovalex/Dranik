@@ -9,6 +9,16 @@
 import Foundation
 
 enum Event<T> {
-    case value(value: T)
-    case error(error: Error)
+    case value(T)
+    case error(Error)
+}
+
+extension Event {
+
+    func map<U>(_ transform: (T) -> U) -> Event<U> {
+        switch self {
+        case .value(let value): return .value(transform(value))
+        case .error(let error): return .error(error)
+        }
+    }
 }

@@ -32,6 +32,15 @@ final class Observable<T> {
         subscriptions.append(subscription)
     }
 
+    func map<U>(_ transform: @escaping (T) -> U) -> Observable<U> {
+        let (sink, observable) = Observable<U>.pipe()
+        subscribe { event in
+            sink.emit(event: event.map(transform))
+        }
+        observable.strongReferences.append(self)
+        return observable
+    }
+
     deinit {
         print("--- OBSERVABLE DEINITED ---")
     }
