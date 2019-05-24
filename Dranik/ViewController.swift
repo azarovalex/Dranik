@@ -13,19 +13,18 @@ class ViewController: UIViewController {
     @IBOutlet private var label: UILabel!
     @IBOutlet private var textField: UITextField!
 
-    var observable: Observable<String>?
+    let bag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.observable = textField.textObservable()
+        textField.textObservable()
             .map { $0 + "LOL" }
             .filter { $0.count == 5 }
-
-        observable?.subscribe { [weak self] event in
-            guard case let .value(newValue) = event else { return }
-            self?.label.text = newValue
-        }
+            .subscribe { [weak self] event in
+                guard case let .value(newValue) = event else { return }
+                self?.label.text = newValue }
+            .disposed(by: bag)
     }
 
     @IBAction func deinitViewController(_ sender: Any) {

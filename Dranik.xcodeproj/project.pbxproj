@@ -17,6 +17,8 @@
 		EC7239382297DC8E00FD8FDE /* ObservationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7239372297DC8E00FD8FDE /* ObservationTarget.swift */; };
 		EC72393A2297F28000FD8FDE /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7239392297F28000FD8FDE /* Sink.swift */; };
 		EC72393C2297F78F00FD8FDE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72393B2297F78F00FD8FDE /* Event.swift */; };
+		EC72393E229801C600FD8FDE /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72393D229801C600FD8FDE /* Disposable.swift */; };
+		EC7239402298039800FD8FDE /* DisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72393F2298039800FD8FDE /* DisposeBag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		EC7239372297DC8E00FD8FDE /* ObservationTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationTarget.swift; sourceTree = "<group>"; };
 		EC7239392297F28000FD8FDE /* Sink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
 		EC72393B2297F78F00FD8FDE /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		EC72393D229801C600FD8FDE /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
+		EC72393F2298039800FD8FDE /* DisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeBag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				EC7239322297D43C00FD8FDE /* Observable.swift */,
 				EC7239392297F28000FD8FDE /* Sink.swift */,
 				EC72393B2297F78F00FD8FDE /* Event.swift */,
+				EC72393D229801C600FD8FDE /* Disposable.swift */,
+				EC72393F2298039800FD8FDE /* DisposeBag.swift */,
 			);
 			path = "Reactive Library";
 			sourceTree = "<group>";
@@ -167,6 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC7239382297DC8E00FD8FDE /* ObservationTarget.swift in Sources */,
+				EC72393E229801C600FD8FDE /* Disposable.swift in Sources */,
+				EC7239402298039800FD8FDE /* DisposeBag.swift in Sources */,
 				EC7239222297D3D500FD8FDE /* ViewController.swift in Sources */,
 				EC72393A2297F28000FD8FDE /* Sink.swift in Sources */,
 				EC7239332297D43C00FD8FDE /* Observable.swift in Sources */,
