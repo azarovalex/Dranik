@@ -15,6 +15,20 @@ enum Event<T> {
 
 extension Event {
 
+    var value: T? {
+        switch self {
+        case .value(let value): return value
+        case .error: return nil
+        }
+    }
+
+    var error: Error? {
+        switch self {
+        case .value: return nil
+        case .error(let error): return error
+        }
+    }
+
     func map<U>(_ transform: (T) -> U) -> Event<U> {
         switch self {
         case .value(let value): return .value(transform(value))

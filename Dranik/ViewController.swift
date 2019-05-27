@@ -18,13 +18,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        textField.textObservable()
-            .map { $0 + "LOL" }
-            .filter { $0.count == 5 }
-            .subscribe { [weak self] event in
-                guard case let .value(newValue) = event else { return }
-                self?.label.text = newValue }
-            .disposed(by: bag)
+        let observable = Observable<String>.create { sink in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                sink.emitValue("Hello")
+            })
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                sink.emitValue("World")
+            })
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
+                sink.emitValue("!!!!")
+            })
+        }
+
+        observable.subscribe { [weak self] event in
+            guard let value = event.value else { return }
+            self?.label.text = value
+        }.disposed(by: bag)
     }
 
     @IBAction func deinitViewController(_ sender: Any) {
