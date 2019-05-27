@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC133585229C04960050B06B /* DranikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC133584229C04960050B06B /* DranikTests.swift */; };
 		EC7239202297D3D500FD8FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72391F2297D3D500FD8FDE /* AppDelegate.swift */; };
 		EC7239222297D3D500FD8FDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7239212297D3D500FD8FDE /* ViewController.swift */; };
 		EC7239252297D3D500FD8FDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7239232297D3D500FD8FDE /* Main.storyboard */; };
@@ -21,7 +22,20 @@
 		EC7239402298039800FD8FDE /* DisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72393F2298039800FD8FDE /* DisposeBag.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EC133587229C04960050B06B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC7239142297D3D500FD8FDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC72391B2297D3D500FD8FDE;
+			remoteInfo = Dranik;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		EC133582229C04960050B06B /* DranikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DranikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC133584229C04960050B06B /* DranikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DranikTests.swift; sourceTree = "<group>"; };
+		EC133586229C04960050B06B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC72391C2297D3D500FD8FDE /* Dranik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dranik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC72391F2297D3D500FD8FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC7239212297D3D500FD8FDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +53,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EC13357F229C04960050B06B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC7239192297D3D500FD8FDE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,10 +70,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC133583229C04960050B06B /* DranikTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC133584229C04960050B06B /* DranikTests.swift */,
+				EC133586229C04960050B06B /* Info.plist */,
+			);
+			path = DranikTests;
+			sourceTree = "<group>";
+		};
 		EC7239132297D3D500FD8FDE = {
 			isa = PBXGroup;
 			children = (
 				EC72391E2297D3D500FD8FDE /* Dranik */,
+				EC133583229C04960050B06B /* DranikTests */,
 				EC72391D2297D3D500FD8FDE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				EC72391C2297D3D500FD8FDE /* Dranik.app */,
+				EC133582229C04960050B06B /* DranikTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +136,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EC133581229C04960050B06B /* DranikTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC13358B229C04960050B06B /* Build configuration list for PBXNativeTarget "DranikTests" */;
+			buildPhases = (
+				EC13357E229C04960050B06B /* Sources */,
+				EC13357F229C04960050B06B /* Frameworks */,
+				EC133580229C04960050B06B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC133588229C04960050B06B /* PBXTargetDependency */,
+			);
+			name = DranikTests;
+			productName = DranikTests;
+			productReference = EC133582229C04960050B06B /* DranikTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EC72391B2297D3D500FD8FDE /* Dranik */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC72392E2297D3D700FD8FDE /* Build configuration list for PBXNativeTarget "Dranik" */;
@@ -131,6 +181,10 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Azarov Alex";
 				TargetAttributes = {
+					EC133581229C04960050B06B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = EC72391B2297D3D500FD8FDE;
+					};
 					EC72391B2297D3D500FD8FDE = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -150,11 +204,19 @@
 			projectRoot = "";
 			targets = (
 				EC72391B2297D3D500FD8FDE /* Dranik */,
+				EC133581229C04960050B06B /* DranikTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EC133580229C04960050B06B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC72391A2297D3D500FD8FDE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,6 +230,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EC13357E229C04960050B06B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC133585229C04960050B06B /* DranikTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC7239182297D3D500FD8FDE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +255,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC133588229C04960050B06B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC72391B2297D3D500FD8FDE /* Dranik */;
+			targetProxy = EC133587229C04960050B06B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EC7239232297D3D500FD8FDE /* Main.storyboard */ = {
@@ -206,6 +284,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EC133589229C04960050B06B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CLALR9F4Q5;
+				INFOPLIST_FILE = DranikTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.azarov.DranikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dranik.app/Dranik";
+			};
+			name = Debug;
+		};
+		EC13358A229C04960050B06B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CLALR9F4Q5;
+				INFOPLIST_FILE = DranikTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.azarov.DranikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dranik.app/Dranik";
+			};
+			name = Release;
+		};
 		EC72392C2297D3D700FD8FDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -361,6 +479,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EC13358B229C04960050B06B /* Build configuration list for PBXNativeTarget "DranikTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC133589229C04960050B06B /* Debug */,
+				EC13358A229C04960050B06B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EC7239172297D3D500FD8FDE /* Build configuration list for PBXProject "Dranik" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
