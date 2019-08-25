@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/azarovalex/Dranik.svg](https://travis-ci.com/azarovalex/Dranik)
+[![Build Status](https://travis-ci.com/azarovalex/Dranik.svg)](https://travis-ci.com/azarovalex/Dranik)
 <br />
 ## Dranik
 
