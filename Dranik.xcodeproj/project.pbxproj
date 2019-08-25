@@ -36,7 +36,7 @@
 		EC133582229C04960050B06B /* DranikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DranikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC133584229C04960050B06B /* DranikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DranikTests.swift; sourceTree = "<group>"; };
 		EC133586229C04960050B06B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC72391C2297D3D500FD8FDE /* Dranik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dranik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC72391C2297D3D500FD8FDE /* Dranik-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dranik-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC72391F2297D3D500FD8FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC7239212297D3D500FD8FDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC7239242297D3D500FD8FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		EC7239132297D3D500FD8FDE = {
 			isa = PBXGroup;
 			children = (
-				EC72391E2297D3D500FD8FDE /* Dranik */,
+				EC72391E2297D3D500FD8FDE /* Dranik-Demo */,
 				EC133583229C04960050B06B /* DranikTests */,
 				EC72391D2297D3D500FD8FDE /* Products */,
 			);
@@ -91,13 +91,13 @@
 		EC72391D2297D3D500FD8FDE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC72391C2297D3D500FD8FDE /* Dranik.app */,
+				EC72391C2297D3D500FD8FDE /* Dranik-Demo.app */,
 				EC133582229C04960050B06B /* DranikTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC72391E2297D3D500FD8FDE /* Dranik */ = {
+		EC72391E2297D3D500FD8FDE /* Dranik-Demo */ = {
 			isa = PBXGroup;
 			children = (
 				EC7239312297D42800FD8FDE /* Reactive Library */,
@@ -108,7 +108,7 @@
 				EC7239282297D3D700FD8FDE /* LaunchScreen.storyboard */,
 				EC72392B2297D3D700FD8FDE /* Info.plist */,
 			);
-			path = Dranik;
+			path = "Dranik-Demo";
 			sourceTree = "<group>";
 		};
 		EC7239312297D42800FD8FDE /* Reactive Library */ = {
@@ -154,9 +154,9 @@
 			productReference = EC133582229C04960050B06B /* DranikTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EC72391B2297D3D500FD8FDE /* Dranik */ = {
+		EC72391B2297D3D500FD8FDE /* Dranik-Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC72392E2297D3D700FD8FDE /* Build configuration list for PBXNativeTarget "Dranik" */;
+			buildConfigurationList = EC72392E2297D3D700FD8FDE /* Build configuration list for PBXNativeTarget "Dranik-Demo" */;
 			buildPhases = (
 				EC7239182297D3D500FD8FDE /* Sources */,
 				EC7239192297D3D500FD8FDE /* Frameworks */,
@@ -166,9 +166,9 @@
 			);
 			dependencies = (
 			);
-			name = Dranik;
+			name = "Dranik-Demo";
 			productName = Dranik;
-			productReference = EC72391C2297D3D500FD8FDE /* Dranik.app */;
+			productReference = EC72391C2297D3D500FD8FDE /* Dranik-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +203,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC72391B2297D3D500FD8FDE /* Dranik */,
+				EC72391B2297D3D500FD8FDE /* Dranik-Demo */,
 				EC133581229C04960050B06B /* DranikTests */,
 			);
 		};
@@ -259,7 +259,7 @@
 /* Begin PBXTargetDependency section */
 		EC133588229C04960050B06B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC72391B2297D3D500FD8FDE /* Dranik */;
+			target = EC72391B2297D3D500FD8FDE /* Dranik-Demo */;
 			targetProxy = EC133587229C04960050B06B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -300,7 +300,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dranik.app/Dranik";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dranik-Demo.app/Dranik-Demo";
 			};
 			name = Debug;
 		};
@@ -320,7 +320,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dranik.app/Dranik";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dranik-Demo.app/Dranik-Demo";
 			};
 			name = Release;
 		};
@@ -446,12 +446,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLALR9F4Q5;
-				INFOPLIST_FILE = Dranik/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Dranik-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = by.azarov.Dranik;
+				PRODUCT_BUNDLE_IDENTIFIER = "by.azarov.Dranik-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,12 +464,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLALR9F4Q5;
-				INFOPLIST_FILE = Dranik/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Dranik-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = by.azarov.Dranik;
+				PRODUCT_BUNDLE_IDENTIFIER = "by.azarov.Dranik-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -497,7 +497,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC72392E2297D3D700FD8FDE /* Build configuration list for PBXNativeTarget "Dranik" */ = {
+		EC72392E2297D3D700FD8FDE /* Build configuration list for PBXNativeTarget "Dranik-Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC72392F2297D3D700FD8FDE /* Debug */,

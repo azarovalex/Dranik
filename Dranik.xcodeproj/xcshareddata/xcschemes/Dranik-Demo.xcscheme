@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EC72391B2297D3D500FD8FDE"
-               BuildableName = "Dranik.app"
-               BlueprintName = "Dranik"
+               BuildableName = "Dranik-Demo.app"
+               BlueprintName = "Dranik-Demo"
                ReferencedContainer = "container:Dranik.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC72391B2297D3D500FD8FDE"
-            BuildableName = "Dranik.app"
-            BlueprintName = "Dranik"
+            BuildableName = "Dranik-Demo.app"
+            BlueprintName = "Dranik-Demo"
             ReferencedContainer = "container:Dranik.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC72391B2297D3D500FD8FDE"
-            BuildableName = "Dranik.app"
-            BlueprintName = "Dranik"
+            BuildableName = "Dranik-Demo.app"
+            BlueprintName = "Dranik-Demo"
             ReferencedContainer = "container:Dranik.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EC72391B2297D3D500FD8FDE"
-            BuildableName = "Dranik.app"
-            BlueprintName = "Dranik"
+            BuildableName = "Dranik-Demo.app"
+            BlueprintName = "Dranik-Demo"
             ReferencedContainer = "container:Dranik.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

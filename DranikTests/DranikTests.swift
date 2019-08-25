@@ -8,7 +8,7 @@
 
 import XCTest
 
-@testable import Dranik
+@testable import Dranik_Demo
 
 class DranikTests: XCTestCase {
 

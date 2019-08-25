@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Dranik.xcodeproj">
+      location = "self:/Users/alexazarov/Developer/iOS/Dranik/Dranik.xcodeproj">
    </FileRef>
 </Workspace>

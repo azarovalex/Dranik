@@ -1,0 +1,4 @@
+osx_image: xcode10.3
+language: swift
+script:
+- fastlane scan
